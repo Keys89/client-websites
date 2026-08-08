@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handy Dandy Tech | Milwaukee TV Mounting & Handyman</title>
+    <meta name="description" content="Handy Dandy Tech provides TV mounting, computer repair, furniture assembly, and general handyman services across Milwaukee, Waukesha, Racine, Kenosha, and the surrounding area.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23A37F4C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'></path><polyline points='9 22 9 12 15 12 15 22'></polyline></svg>" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Space+Grotesk:wght@400;500&family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header" id="header">
+        <div class="header-container">
+            <a href="#home" class="logo">Handy Dandy <span>Tech</span></a>
+            <nav class="main-nav" id="mainNav">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <a href="#contact" class="btn btn-primary header-cta">Get a Quote</a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact" class="btn btn-primary">Get a Quote</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2071&auto=format&fit=crop" alt="Handyman at work" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>TV Mounting & <br>Handyman Help</h1>
+            <p>Handy Dandy Tech handles TV mounting, computer repair, furniture assembly, and general handyman work across the greater Milwaukee area.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary btn-shrink-hover">Get a Quote</a>
+                <a href="#services" class="btn btn-outline btn-shrink-hover">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services-section reveal-section" id="services">
+        <h2 class="services-heading reveal-item">Your home, our <span class="accent-underline">craftsmanship</span>. Together, we'll make something great.</h2>
+
+        <div class="services-tabs reveal-item reveal-delay-100">
+            <button class="service-tab active" data-service="handyman">
+                <svg class="tab-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                <span>Handyman</span>
+            </button>
+            <button class="service-tab" data-service="mounting">
+                <svg class="tab-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                <span>TV Mounting</span>
+            </button>
+            <button class="service-tab" data-service="tech">
+                <svg class="tab-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="8" y1="10" x2="16" y2="10"></line><circle cx="12" cy="17" r="1"></circle></svg>
+                <span>Computer Repair</span>
+            </button>
+            <button class="service-tab" data-service="assembly">
+                <svg class="tab-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"></path><path d="m6.8 4.6 2.8 2.8"></path><path d="M4 12h4"></path><path d="m6.8 19.4 2.8-2.8"></path><path d="M12 18v4"></path><path d="m14.4 16.6 2.8 2.8"></path><path d="M16 12h4"></path><path d="m14.4 7.4 2.8-2.8"></path></svg>
+                <span>Furniture Assembly</span>
+            </button>
+        </div>
+
+        <div class="service-panel reveal-item reveal-delay-200" id="servicePanel">
+            <div class="service-panel-image">
+                <img id="servicePanelImg" src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2070&auto=format&fit=crop" alt="Service">
+            </div>
+            <div class="service-panel-text" id="servicePanelText">
+                <h3 id="servicePanelTitle">Handyman</h3>
+                <p id="servicePanelDesc">Handy Dandy Tech offers professional, reliable help for TV mounting, computer repair, furniture assembly, and general handyman work across the greater Milwaukee area, with same-day availability.</p>
+                <h4>Common requests:</h4>
+                <ul id="servicePanelRequests">
+                    <li>TV mounting and home entertainment setup</li>
+                    <li>Computer repair and tech support</li>
+                    <li>IKEA and flat-pack furniture assembly</li>
+                    <li>General handyman work</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section reveal-section">
+        <div class="features-left">
+            <h2 class="reveal-item">We Are Always Ready To Help Your Problems</h2>
+            <div class="features-list reveal-item reveal-delay-150">
+                <div class="features-list-item">
+                    <div class="features-num">1</div>
+                    <div>
+                        <h4>Expert Technicians</h4>
+                        <p>Every job is handled by a trained, background-checked professional.</p>
+                    </div>
+                </div>
+                <div class="features-list-item">
+                    <div class="features-num">2</div>
+                    <div>
+                        <h4>Quality Workmanship</h4>
+                        <p>We treat every project like it's our own home, from start to finish.</p>
+                    </div>
+                </div>
+                <div class="features-list-item">
+                    <div class="features-num">3</div>
+                    <div>
+                        <h4>Affordable Rates</h4>
+                        <p>Transparent, upfront pricing with no hidden fees or surprises.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="features-right reveal-item reveal-delay-250">
+            <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?q=80&w=2070&auto=format&fit=crop" alt="Work">
+            <div class="features-right-overlay">
+                <span>Let's fix it together!</span>
+                <h3>Partner For Quality And Reliability!</h3>
+                <a href="#contact" class="btn btn-light btn-shrink-hover">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="tf-outer reveal-section" id="testimonials">
+        <div class="tf-section-wrapper">
+            <h2 class="tf-title reveal-item">Why people like us.</h2>
+            <div class="tf-grid">
+                <div class="tf-card reveal-item reveal-delay-100">
+                    <div class="tf-icon-circle" style="background-color:rgba(142,135,110,.15);color:#8E876E;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82H4a1.65 1.65 0 0 0-1.51-1H2a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 3.6 9"></path></svg>
+                    </div>
+                    <h3 class="tf-card-title">Quality First</h3>
+                    <p class="tf-card-desc">Our team of full-time technicians are professionally vetted, background-checked, and continuously trained.</p>
+                </div>
+                <div class="tf-card reveal-item reveal-delay-200">
+                    <div class="tf-icon-circle" style="background-color:rgba(184,29,36,.15);color:#B81D24;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="5"></circle><path d="M20 21a8 8 0 1 0-16 0"></path></svg>
+                    </div>
+                    <h3 class="tf-card-title">Single Point of Contact</h3>
+                    <p class="tf-card-desc">Real people to manage your project from start to finish.</p>
+                </div>
+                <div class="tf-card reveal-item reveal-delay-300">
+                    <div class="tf-icon-circle" style="background-color:rgba(85,85,85,.15);color:#555555;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <h3 class="tf-card-title">Return On Time</h3>
+                    <p class="tf-card-desc">On-time arrivals, precise job planning, and seamless coordination, to save you time.</p>
+                </div>
+                <div class="tf-card reveal-item reveal-delay-400">
+                    <div class="tf-icon-circle" style="background-color:rgba(163,127,76,.15);color:#A37F4C;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.77-.77-.77a5.4 5.4 0 0 0-7.65 7.65l.77.77L12 20.66l7.65-7.66.77-.77a5.4 5.4 0 0 0 0-7.65Z"></path></svg>
+                    </div>
+                    <h3 class="tf-card-title">Home Peace of Mind</h3>
+                    <p class="tf-card-desc">Stress-free home management, finally.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="customer-reviews-slider reveal-item reveal-delay-250">
+            <div class="reviews-mask">
+                <div class="customer-reviews-container" id="reviewsContainer">
+                    <div class="customer-reviews-left" id="reviewImage" style="background-image:url('https://cdn.prod.website-files.com/66dadfeb0e62f4e6b618e9d2/66debd81bc32fe401b7c8f15_Photo-1.webp');"></div>
+                    <div class="customer-reviews-right" id="reviewText">
+                        <p class="testimonials-main-title">Testimonials</p>
+                        <div class="reviews-text" id="reviewQuote">Very professional and helpful! Helped me get it set up even though I didn't have wifi yet.</div>
+                        <div class="name-container">
+                            <div class="star-icon-wrapper" id="reviewStars"></div>
+                            <h6 class="autor-name" id="reviewName">Dan G., Milwaukee</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-wrapper">
+                <button type="button" class="right-review-arrow left-arrow" id="reviewPrev" aria-label="Previous testimonial">
+                    <svg class="review-icon" width="13" height="12" viewBox="0 0 13 12" fill="none"><path d="M12 6L2 6M2 6L7 11M2 6L7 0.999999" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+                </button>
+                <button type="button" class="right-review-arrow" id="reviewNext" aria-label="Next testimonial">
+                    <svg class="review-icon" width="13" height="12" viewBox="0 0 13 12" fill="none"><path d="M1 6H11M11 6L6 1M11 6L6 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+                </button>
+            </div>
+            <div class="review-dots" id="reviewDots"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-outer reveal-section" id="about">
+        <div class="about-section-wrapper">
+            <div class="about-grid">
+                <div class="about-left-col reveal-item reveal-delay-200">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=2070&auto=format&fit=crop" alt="Handy Dandy Tech at Work" class="about-image">
+                        <div class="about-image-border"></div>
+                    </div>
+                </div>
+                <div class="about-right-col reveal-item">
+                    <span class="about-subtitle">About Us</span>
+                    <h2 class="about-title">Milwaukee's TV Mounting & Tech Handyman</h2>
+                    <p class="about-text">Handy Dandy Tech specializes in TV mounting, computer repair, and furniture assembly, backed up by general handyman know-how for whatever else comes up around the house.</p>
+                    <p class="about-text">We serve homeowners across Milwaukee, Waukesha, Washington, Walworth, Racine, Kenosha, and Ozaukee counties, with upfront estimates and same-day availability.</p>
+                    <div class="about-stats reveal-item reveal-delay-150">
+                        <div class="about-stat-item">
+                            <span class="about-stat-num">7</span>
+                            <span class="about-stat-label">Counties Served</span>
+                        </div>
+                        <div class="about-stat-item">
+                            <span class="about-stat-num">Same-Day</span>
+                            <span class="about-stat-label">Availability</span>
+                        </div>
+                        <div class="about-stat-item">
+                            <span class="about-stat-num">5&#9733;</span>
+                            <span class="about-stat-label">Customer Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-outer reveal-section" id="contact">
+        <div class="contact-section-wrapper">
+            <div class="contact-grid">
+                <div class="contact-left-col reveal-item">
+                    <span class="contact-subtitle">Contact Us</span>
+                    <h2 class="contact-title">Get in touch with our team today</h2>
+                    <p class="contact-desc">Have questions or need a consultation? Contact our professional home services team today. We are always ready to help with your home projects.</p>
+                    <div class="contact-info-list">
+                        <a href="tel:(414)210-0107" class="contact-info-item">
+                            <div class="contact-icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div class="contact-info-content">
+                                <span class="contact-info-label">Call or text</span>
+                                <span class="contact-info-value">(414) 210-0107</span>
+                            </div>
+                        </a>
+                        <a href="mailto:info@handydandytech.com" class="contact-info-item">
+                            <div class="contact-icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                            </div>
+                            <div class="contact-info-content">
+                                <span class="contact-info-label">Send us an email</span>
+                                <span class="contact-info-value">info@handydandytech.com</span>
+                            </div>
+                        </a>
+                        <div class="contact-info-item">
+                            <div class="contact-icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="contact-info-content">
+                                <span class="contact-info-label">Service area</span>
+                                <span class="contact-info-value">Milwaukee, WI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right-col reveal-item reveal-delay-250">
+                    <div class="contact-form-card">
+                        <form id="contactForm">
+                            <div class="contact-form-field">
+                                <label for="form-name" class="contact-form-label">Name</label>
+                                <input id="form-name" type="text" required placeholder="Full Name" class="contact-form-input">
+                            </div>
+                            <div class="contact-form-field">
+                                <label for="form-email" class="contact-form-label">Email</label>
+                                <input id="form-email" type="email" required placeholder="email@example.com" class="contact-form-input">
+                            </div>
+                            <div class="contact-form-field">
+                                <label for="form-phone" class="contact-form-label">Phone</label>
+                                <input id="form-phone" type="tel" required placeholder="(123) - 840 3987" class="contact-form-input">
+                            </div>
+                            <div class="contact-form-field">
+                                <label for="form-service" class="contact-form-label">Service</label>
+                                <input id="form-service" type="text" required placeholder="Ex. Interior Painting" class="contact-form-input">
+                            </div>
+                            <div class="contact-form-field">
+                                <label for="form-message" class="contact-form-label">Message</label>
+                                <textarea id="form-message" required placeholder="Please describe what service you are interested in..." class="contact-form-textarea"></textarea>
+                            </div>
+                            <button type="submit" class="contact-form-submit">Submit message</button>
+                        </form>
+                        <div class="contact-form-thanks" id="contactThanks">
+                            <h3>Thank you!</h3>
+                            <p>Your message has been submitted successfully.<br>Our team will get back to you within 24-48 hours.</p>
+                            <button type="button" class="btn btn-primary" id="contactReset">Send another message</button>
+                        </div>
+                    </div>
+                    <div class="contact-card-bg-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-outer reveal-section" id="faq">
+        <div class="faq-section-wrapper">
+            <div class="faq-header reveal-item">
+                <span class="faq-subtitle">F A Q</span>
+                <h2 class="faq-title">Your Questions <span class="faq-underline">Answered</span></h2>
+            </div>
+            <div class="faq-list reveal-item reveal-delay-150">
+                <div class="faq-item">
+                    <button class="faq-question-btn" aria-expanded="false">
+                        <span>What services do you offer?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer-pane">
+                        <p class="faq-answer-text">Handy Dandy Tech specializes in TV mounting and home entertainment installation, computer repair, IKEA and flat-pack furniture assembly, and general handyman services.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question-btn" aria-expanded="false">
+                        <span>How do you estimate project costs?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer-pane">
+                        <p class="faq-answer-text">We provide clear, upfront estimates before any work begins, so you know exactly what to expect.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question-btn" aria-expanded="false">
+                        <span>What areas do you serve?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer-pane">
+                        <p class="faq-answer-text">We serve Milwaukee, Waukesha, Washington, Walworth, Racine, Kenosha, and Ozaukee counties, with same-day availability in many cases.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question-btn" aria-expanded="false">
+                        <span>How do I schedule an estimate?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer-pane">
+                        <p class="faq-answer-text">You can submit an inquiry via the Contact form above, email us directly at info@handydandytech.com, or call or text us at (414) 210-0107. We're available Monday through Saturday, 9am to 6pm.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col footer-brand-col">
+                <div class="logo footer-logo">Handy Dandy <span>Tech</span></div>
+                <p class="footer-desc">TV mounting, computer repair, furniture assembly, and general handyman services across the greater Milwaukee area, with same-day availability.</p>
+                <a href="#contact" class="btn btn-primary btn-shrink-hover">Get a Quote</a>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul class="footer-links" id="footerServices">
+                    <li><a href="#services">Handyman</a></li>
+                    <li><a href="#services">TV Mounting</a></li>
+                    <li><a href="#services">Computer Repair</a></li>
+                    <li><a href="#services">Furniture Assembly</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li>(414) 210-0107</li>
+                    <li>info@handydandytech.com</li>
+                    <li>Mon&ndash;Sat, 9am&ndash;6pm</li>
+                    <li>Serving Milwaukee, Waukesha, Washington, Walworth, Racine, Kenosha & Ozaukee Counties</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Handy Dandy Tech. All rights reserved. Created By <a href="https://marketyourterritory.com/" target="_blank" rel="noopener noreferrer">Market Your Territory</a></p>
+            <p class="footer-badge">Same-Day Availability</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
